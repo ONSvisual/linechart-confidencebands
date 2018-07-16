@@ -35,9 +35,9 @@
         body /* required */
 		{
             font-family: 'Open Sans', sans-serif;
-			font-weight:400;
-			max-width:800px;
-			margin: 0px auto;
+      			font-weight:400;
+      			/* max-width:800px; */
+      			margin: 0px auto;
         }
 
 

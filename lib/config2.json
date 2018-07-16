@@ -1,13 +1,14 @@
 {
     "essential" : {
             "graphic_data_url": "migrationdata2.csv",
-
+            "dataSeriesNames":["series1","series2"],
             "dateFormat":"%b-%y",
             "blur":3,
-
-            "legendLabels" : ["Immigration", "Emigration", "Red"],
+            "lineSeriesNames":["Visas","HESA"],
+            "lineColourPalette":["#B8860B","#266D4A"],
+            "legendLabels" : ["Non-EU IPS", "IPS (adjusted)"],
             "legendStyle": "line",
-            "colour_palette": ["rgb(0,117,163)" , "rgb(245,148,47", "#E73F40", "#7BCAE2" ],
+            "colour_palette": ["rgb(0,117,163)" , "rgb(245,148,80)", "rgb(38,109,74)"],
 
             "sourceText":["Statistics"],
             "sourceURL":["http://www.ons.gov.uk"],
@@ -49,21 +50,21 @@
             ],
 
             "yAxisLabel":"thousands",
-            "yAxisScale":[0,100],
+            "yAxisScale":[0,250],
             "yAxisBreak": false,
             "yAxisBreak_sm_md_lg": [65,65,65]
     },
 
     "optional" : {
-            "margin_sm": [30, 80, 20, 40],
-            "margin_md": [30, 80, 20, 30],
+            "margin_sm": [30, 100, 20, 40],
+            "margin_md": [30, 100, 20, 40],
 
             "aspectRatio_sm" : [16,16],
             "aspectRatio_md" : [16,12],
 
-            "mobileBreakpoint" : 400,
+            "mobileBreakpoint" : 600,
 
-            "xAxisTextFormat_sm_md" : ["%y", "%Y"],
+            "xAxisTextFormat_sm_md" : ["%b %y", "%b %y"],
 
             "x_num_ticks_sm_md" : [6,6],
             "y_num_ticks_sm_md" : [5,11],
