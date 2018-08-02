@@ -1,8 +1,7 @@
 # Confidence band line chart
-A line chart with confidence bands and blurring. 
+A line chart with confidence bands and blurring. [Demo](https://onsvisual.github.io/linechart-confidencebands/index.html)
 ![screen shot 2018-08-02 at 10 45 31](https://user-images.githubusercontent.com/2945099/43576416-34f2b43a-9641-11e8-89a9-75678a2d4aa7.png)
 
-[Demo](https://onsvisual.github.io/linechart-confidencebands/index.html)
 
 ## Files
 The files for each chart should be of the following format:
@@ -23,11 +22,11 @@ The chart is run from migrationdata.csv. The other data.csv is for download.
 The data structure is like this
 
 | date | series1 | series1a	| series1b	| series1c	| Visas	| HESA	| series2	| series2a	| series2b | series2c | 
-| ------------- | ------------- | ------------- | ------------- |------------- | ------------- | ------------- |------------- | ------------- | ------------- |
-| 2000 |   |   |   |   |   |   |   |   |   |
-| 2001 |   |   |   |   |   |   |   |   |   |
-| 2002 |   |   |   |   |   |   |   |   |   |
-| 2003 |   |   |   |   |   |   |   |   |   |
+| -----| ------- | -------- | --------- |---------- | ----- | ----- |-------- | --------- | -------- | -------- |
+| 2000 |         |          |           |           |       |       |         |           |          |          |
+| 2001 |         |          |           |           |       |       |         |           |          |          |
+| 2002 |         |          |           |           |       |       |         |           |          |          |
+| 2003 |         |          |           |           |       |       |         |           |          |          |
 
 It’s important to insure the date column is named exactly “date”, with a lower case d. 
 
