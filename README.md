@@ -5,8 +5,6 @@ A line chart with confidence bands and blurring.
 [Demo](https://onsvisual.github.io/linechart-confidencebands/index.html)
 
 ## Files
-![screenshot-2017-9-25 bar-and-line](https://user-images.githubusercontent.com/2945099/30830690-b82cb7dc-a23c-11e7-976d-1e7ba8069f9f.png)
-
 The files for each chart should be of the following format:
 
 ![image1](https://user-images.githubusercontent.com/2945099/30038486-1e58ac22-91bd-11e7-8356-96fd6a65c33d.png)
