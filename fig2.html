@@ -121,7 +121,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="graphic">
     </div>
     <div id="footer">
-      <h6>Source: International Passenger Survey, Office for National Statistics, Home Office and Higher Education Statistics Agency</h6>
+      <h6>Source: <span id="sourcetext"></span></h6>
       <h6>Notes:</h6>
       <ol>
         <li>Figures for IPS for 2017 are provisional.</li>
@@ -157,7 +157,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   };
   								var width = parseInt(d3.select("body").style("width")) - margin.left - margin.right;
   								var height = Math.ceil((width * config.optional.aspectRatio_sm[1]) / config.optional.aspectRatio_sm[0]) - margin.top - margin.bottom;
-                  var no_ticks = config.optional.x_num_ticks_sm_md[0];
           }
   			  else {
                   var margin = {	'top': 	config.optional.margin_md[0],
@@ -167,7 +166,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   };
   								var width = parseInt(d3.select("body").style("width")) - margin.left - margin.right;
   		            var height = Math.ceil((width * config.optional.aspectRatio_md[1]) / config.optional.aspectRatio_md[0]) - margin.top - margin.bottom;
-                  var no_ticks = config.optional.x_num_ticks_sm_md[1];
           }
 
             // Config
@@ -183,9 +181,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             var useLabels = true,
                 yAxisTitle = config.essential.yAxisLabel;
 
-            //if (useLabels === true) { margin.right = 50; }
-            // for the labels; 40 + 10 for each array.length > 4
 
+
+
+            //manually set the tick values
             if (parseInt(d3.select("body").style("width")) < config.optional.mobileBreakpoint) {
               tickvalues=[new Date(2009, 11, 1),
                           new Date(2011, 11, 1),
@@ -444,6 +443,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     .attr("transform",function(d){
                       return "translate(" + x(data[data.length-1]["date"]) + "," + (y(data[data.length-1][config.essential.dataSeriesNames[1]])+10) + ")";
                     })
+
+                //write the source
+                d3.select("#sourcetext").html(config.essential.sourceText)
+
 
                     if (pymChild) {
             		        pymChild.sendHeight();
