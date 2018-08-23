@@ -1,6 +1,6 @@
 {
     "essential" : {
-            "graphic_data_url": "migrationdata2.csv",
+            "graphic_data_url": "migrationdata.csv",
             "dataSeriesNames":["series1","series2"],
             "dateFormat":"%b-%y",
             "blur":3,
